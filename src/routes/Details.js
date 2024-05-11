@@ -16,12 +16,11 @@ function Details(){
         getMovie();
     },[]);
     console.log(selectedMovie);
-    return <div>
-        <img src={selectedMovie.medium_cover_image} alt={selectedMovie.id}/>
-        <h1>{selectedMovie.title}</h1>
+    return( <div>
+        <h1>{selectedMovie?.title}</h1>
         <hr />
-        <p>Rating :{selectedMovie.rating}</p>
-    </div>;
+        <p>{selectedMovie?.rating}</p>
+    </div>);
 }
 
 export default Details;
