@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
 import Home from "./routes/Home";
 import Details from "./routes/Details";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
