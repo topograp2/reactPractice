@@ -1,10 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { 
-  BrowserRouter as Router, 
-  Routes, 
-  Route 
-  } from "react-router-dom";
+
 import Home from "./routes/Home";
 import Details from "./routes/Details";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,7 +9,7 @@ function App() {
 
   return (
     <Router>
-    <Routes>
+    <Routes basename={process.env.PUBLIC_URL}>
       <Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Details />} />
       <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
     </Routes>
