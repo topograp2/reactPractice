@@ -8,12 +8,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
 
   return (
-    <Router>
-    <Routes basename={process.env.PUBLIC_URL}>
-      <Route path="/movie/:id" element={<Details />} />
-      <Route path="/" element={<Home />} />
-    </Routes>
-  </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/movie/:id" element={<Details />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
