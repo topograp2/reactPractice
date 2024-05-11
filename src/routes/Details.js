@@ -17,9 +17,9 @@ function Details(){
     },[]);
     console.log(selectedMovie);
     return( <div>
-        <h1>{selectedMovie?.title}</h1>
+       
         <hr />
-        <p>{selectedMovie?.rating}</p>
+        황당하다...
     </div>);
 }
 
